@@ -13,7 +13,30 @@
     color: blue;
     font-weight: 500;
 }
+button {
+    margin-bottom: .6rem;
+}
 
 .table {
     width: 100%;
 } 
+
+.epis {
+    color: blue;
+    margin-left: .2rem;
+}
+
+.edit {
+    color:rgb(248, 244, 8)
+}
+
+.delete {
+    color:red;
+    margin-left: .5rem;
+}
+
+.mat-header {
+    width: 5rem;
+}
+
+
