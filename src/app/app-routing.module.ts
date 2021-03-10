@@ -9,6 +9,7 @@ import { EpiAllComponent } from './components/views/epi/epi-all/epi-all.componen
 import { EpiCreateComponent } from './components/views/epi/epi-create/epi-create.component';
 import { EpiUpdateComponent } from './components/views/epi/epi-update/epi-update.component';
 import { EpiDeleteComponent } from './components/views/epi/epi-delete/epi-delete.component';
+import { EpiReadComponent } from './components/views/epi/epi-read/epi-read.component';
 
 
 
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path: 'categorias/:id_cat/epis/:id/delete',
     component : EpiDeleteComponent
+  },
+  {
+   path: 'categorias/:id_cat/epis/:id/read',
+  component : EpiReadComponent  
   }
 ];
 

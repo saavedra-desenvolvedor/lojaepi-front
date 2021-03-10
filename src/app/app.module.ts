@@ -28,7 +28,8 @@ import { CategoriaUpdateComponent } from './components/views/categoria/categoria
 import { EpiAllComponent } from './components/views/epi/epi-all/epi-all.component';
 import { EpiCreateComponent } from './components/views/epi/epi-create/epi-create.component';
 import { EpiUpdateComponent } from './components/views/epi/epi-update/epi-update.component';
-import { EpiDeleteComponent } from './components/views/epi/epi-delete/epi-delete.component'; 
+import { EpiDeleteComponent } from './components/views/epi/epi-delete/epi-delete.component';
+import { EpiReadComponent } from './components/views/epi/epi-read/epi-read.component'; 
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { EpiDeleteComponent } from './components/views/epi/epi-delete/epi-delete
     EpiAllComponent,
     EpiCreateComponent,
     EpiUpdateComponent,
-    EpiDeleteComponent
+    EpiDeleteComponent,
+    EpiReadComponent
   ],
   imports: [
     BrowserModule,

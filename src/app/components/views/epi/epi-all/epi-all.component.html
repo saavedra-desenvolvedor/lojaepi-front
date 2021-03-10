@@ -4,7 +4,8 @@
         <h1>EPIS</h1>
     </div>
     
-    <button class="mat-elevation-z8" (click)="navegarParaCriarEpi()" mat-raised-button color="primary">INSERIR NOVO EPI</button>    
+    <button class="mat-elevation-z8" (click)="navegarParaCriarEpi()"
+     mat-raised-button color="primary">INSERIR NOVO EPI</button>    
     
     <div class="mat-elevation-z8 content-table">
 
@@ -25,7 +26,7 @@
         <ng-container matColumnDef="epis">
           <th mat-header-cell *matHeaderCellDef> VER EPI </th>
           <td mat-cell *matCellDef="let row">  
-           <a class="epis" >
+           <a class="epis" routerLink="{{ row.id }}/read" >
             <i class="material-icons">visibility</i>
            </a>
           </td>
