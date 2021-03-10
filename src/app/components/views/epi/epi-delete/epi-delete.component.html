@@ -1,0 +1,25 @@
+<form>
+    <h1>DELETANDO EPI</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Produto</mat-label>
+        <input matInput [(ngModel)]="epi.produto" type="text" name="produto" disabled>         
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Marca Produto</mat-label>
+        <input matInput [(ngModel)]="epi.marca_produto" type="text" name="marca_produto" disabled>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <textarea matInput [(ngModel)]="epi.descricao" type="text" name="descricao" disabled></textarea>
+       
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()" class="mat-elevation-z8" mat-raised-button color="primary">DELETAR</button>
+        <button (click)="cancel()" class="mat-elevation-z8" mat-raised-button color="warn">CANCELAR</button>
+    </div>
+
+</form>
