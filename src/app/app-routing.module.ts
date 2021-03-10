@@ -6,6 +6,9 @@ import { HomeComponent } from './components/views/home/home.component';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
 import { EpiAllComponent } from './components/views/epi/epi-all/epi-all.component';
+import { EpiCreateComponent } from './components/views/epi/epi-create/epi-create.component';
+import { EpiUpdateComponent } from './components/views/epi/epi-update/epi-update.component';
+
 
 const routes: Routes = [
   {
@@ -31,6 +34,15 @@ const routes: Routes = [
   {
     path: 'categorias/:id_cat/epis',
     component: EpiAllComponent
+  },
+  {
+    path: 'categorias/:id_cat/epis/create',
+    component : EpiCreateComponent
+
+  },
+  {
+    path: 'categorias/:id_cat/epis/:id/update',
+    component : EpiUpdateComponent
   }
 ];
 

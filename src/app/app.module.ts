@@ -19,13 +19,15 @@ import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button'; 
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
 import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {MatInputModule} from '@angular/material/input'; 
 import {MatFormFieldModule} from '@angular/material/form-field'; 
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { CategoriaDeleteComponent } from './components/views/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/views/categoria/categoria-update/categoria-update.component';
-import { EpiAllComponent } from './components/views/epi/epi-all/epi-all.component'; 
+import { EpiAllComponent } from './components/views/epi/epi-all/epi-all.component';
+import { EpiCreateComponent } from './components/views/epi/epi-create/epi-create.component';
+import { EpiUpdateComponent } from './components/views/epi/epi-update/epi-update.component'; 
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { EpiAllComponent } from './components/views/epi/epi-all/epi-all.componen
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
     CategoriaUpdateComponent,
-    EpiAllComponent
+    EpiAllComponent,
+    EpiCreateComponent,
+    EpiUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +60,7 @@ import { EpiAllComponent } from './components/views/epi/epi-all/epi-all.componen
     MatInputModule,
     MatFormFieldModule,
     MatSnackBarModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

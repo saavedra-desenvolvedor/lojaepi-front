@@ -1,0 +1,27 @@
+<form>
+    <h1>CRIANDO NOVO EPI</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Produto</mat-label>
+        <input matInput [(ngModel)]="epi.produto" [formControl]='produto' required type="text" name="produto" placeholder="Ex. Epis Diversos" maxlength="100" > 
+        <mat-error *ngIf="produto.invalid"> {{ getMessage() }} </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Marca Produto</mat-label>
+        <input matInput [(ngModel)]="epi.marca_produto" [formControl]='marca_produto' required type="text" name="marca_produto" placeholder="Ex. Marcas Diversas" maxlength="100">
+        <mat-error *ngIf="marca_produto.invalid"> {{ getMessage() }} </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <textarea matInput [(ngModel)]="epi.descricao" [formControl]='descricao' required type="text" name="descricao" placeholder="Ex. Descrição do Produtoa" maxlength="2000000"></textarea>
+        <mat-error *ngIf="descricao.invalid"> {{ getMessage() }} </mat-error>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="create()" [disabled]="getMessage()"  class="mat-elevation-z8" mat-raised-button color="primary">CRIAR</button>
+        <button  (click)="cancel()" class="mat-elevation-z8" mat-raised-button color="warn">CANCELAR</button>
+    </div>
+
+</form>
