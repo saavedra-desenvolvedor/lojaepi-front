@@ -39,4 +39,8 @@ export class EpiAllComponent implements OnInit {
     this.router.navigate([`categorias/${this.id_cat}/epis/create`])
   }
 
+  /**cancel(): void {
+    this.router.navigate([`categorias/${this.id_cat}/epis`]);
+  } **/
+
 }
